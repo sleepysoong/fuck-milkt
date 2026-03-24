@@ -8,6 +8,7 @@ Android-only React Native dummy app.
 - App name: `Calculator`
 - Launch behavior: open `https://www.google.com` inside a WebView
 - Minimum Android version: Android 8.0 (API 26)
+- Pre-commit behavior: bump version, build release APK, export to `outputs/calculator_v{version}.apk`, and stage that APK for commit
 
 ## Commands
 
@@ -23,4 +24,4 @@ npm run build:apk
 
 - iOS support has been removed from this project.
 - GitHub Actions release automation has been removed.
-- Local git hooks now handle version bumps, APK builds, tags, and GitHub releases.
+- Local git hooks now handle version bumps, local APK export, and APK staging only.
